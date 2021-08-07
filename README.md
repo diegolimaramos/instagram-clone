@@ -7,8 +7,8 @@
 </p>
 
 <h3 align="center">
-  Deploy da Aplicação com Git Pages:
-  <a href="https://diegolramos.github.io/Instagram/" target="__blank">ACESSE AQUI </p>
+  Deploy da Aplicação com Replit:
+  <a href="" target="__blank">ACESSE AQUI </p>
 </h3>
 
 
