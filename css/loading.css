@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.pulse {
+    width: 50px; 
+    height: 50px;
+    animation: 0.7s infinite;
+    animation-direction: alternate;
+    animation-name: pulse;
+  }
+    
+@keyframes pulse {
+0% {
+    transform: scale(1);
+}
+100% {
+    transform: scale(1.1);
+}
+}

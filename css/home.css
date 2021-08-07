@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #DBDBDB;
+    z-index: 1;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    max-width: 1280px;
+}
+
+header nav img{
+    width: 100px;
+}
+
+header nav input{
+    height: 25px;
+    width: 220px;
+    background-color: #FAFAFA;
+    border: none;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    outline: none;
+}
+
+header nav input::placeholder{
+    text-align: center;
+}
+
+header nav ul{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+#perfil{
+    border-radius: 50%;
+}
+
+.icons{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.container-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    /* max-width: 1280px; */
+}
+
+.posts{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 165px;
+    max-width: 650px;
+}
+
+.history{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    border-radius: 4px;
+    border: 1px solid #DBDBDB;
+    background-color: white;
+}
+
+.history-user{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+
+.history-user .img-users{    
+    background: linear-gradient(90deg, rgba(253,29,148,1) 50%, rgba(251,158,0,1) 100%);
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.img-users{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.container-post{
+    border-radius: 4px;
+    border: 1px solid #DBDBDB;
+    margin-top: 20px;
+}
+
+.container-post .img-post{
+    width: 100%;
+}
+
+.post-user{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.data-user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.data-user img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.data{
+    width: 100%;
+    margin-left: 15px;
+}
+
+.data p:nth-child(1){
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.post-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.post-icons .icons{
+    height: 25px;
+    width: 25px;
+}
+
+.post-icons ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 20%;
+}
+
+.scraps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.scraps span{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.scraps p:nth-child(3),
+.scraps p:nth-child(6){
+    cursor: pointer;
+    color: gray;
+}
+
+.scraps p:nth-child(6){
+    font-size: 12px;
+}
+
+.scraps img{
+    height: 10px;
+}
+
+.form{
+    border-top: 1px solid #dbdbdb;
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form img{
+    background-color: white;
+    height: 25px;
+    cursor: pointer;
+}
+
+.container-post form input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: gray;
+    background: transparent;
+}
+
+.container-post form button{
+    border: none;
+    background: transparent;
+}
+
+.suggestion{
+    position: fixed;
+    height: 100%;
+    left: 800px;
+    width: 320px;
+    max-width: 320px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sugestions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35%;
+}
+
+.user-perfil,
+.user-sugestion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-perfil > p,
+.user-sugestion > p{
+    font-weight: bold;
+    color: #0095f6;
+    font-size: 12px;
+}
+
+.data-user-perfil,
+.data-user-sugestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    width: 50%;
+}
+
+.data-user-perfil img {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+.name-user-perfil > p:nth-child(1),
+.name-user-sugestion > p:nth-child(1){
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.name-user-perfil > p:nth-child(2),
+.name-user-sugestion > p:nth-child(2){
+    color: #8e8e8e;
+}
+
+.text-sugestion{
+    display: flex;
+    justify-content: space-between;
+    color: #8e8e8e;
+    font-size: 12px;
+    padding: 10px 30px;
+}
+
+.text-sugestion span{
+    color: black;
+}
+
+.img-sugestion{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+/* ------------------------------------------------------------------------ */
+@media (max-width: 350px){
+        header nav{
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        width: 50%;
+    }
+
+    header nav input{
+        display: none;
+    }
+
+    .history-user:nth-child(5),
+    .history-user:nth-child(6),
+    .history-user:nth-child(7),
+    .history-user:nth-child(8){
+        display: none;
+    }
+
+    .posts{
+        position: inherit;
+        width: 90%;
+    }
+
+    .post-icons ul {
+        width: 30%;
+    }
+}
+
+@media (max-width: 450px){
+     header nav{
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        width: 50%;
+    }
+
+    header nav input{
+        display: none;
+    }
+
+    .history-user:nth-child(6),
+    .history-user:nth-child(7),
+    .history-user:nth-child(8){
+        display: none;
+    }
+
+    .posts {
+        position: inherit;
+        width: 95%;
+    }
+
+    .post-icons ul {
+        width: 25%;
+    } 
+}
+
+@media (min-width: 451px) and (max-width: 875px){
+    header nav{
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        width: 30%;
+    }
+
+    .history-user:nth-child(7),
+    .history-user:nth-child(8){
+        display: none;
+    }
+
+    .posts {
+        position: inherit;
+        width: 90%;
+    }
+
+}

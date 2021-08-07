@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.smartphone{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.smartphone img:nth-child(1){
+    height: 563px;
+}
+
+.smartphone img:nth-child(2){
+    position: relative;
+    right: 275px;
+    top: 4px;
+    height: 387px;
+    width: 215px;
+}
+
+.container_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+}
+
+.logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 70%;
+    padding: 30px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+.logout img:nth-child(1){
+    width: 170px;
+}
+
+.logout img:nth-child(2){
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.logout a:nth-child(3){
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #0095f6;
+    color: #fff;
+    width: 170px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.logout p{
+    font-size: 12px;
+}
+
+.logout p a{
+    text-decoration: none;
+    color: #0095f6;
+}
+
+
+
+/* --------------------------RESPONSIVIDADE -------------------------- */
+
+@media (max-width: 450px){
+    .container{
+        width: 80%;
+    }
+
+    .smartphone{
+        display: none;
+    }
+
+    .logout{
+        border: none;
+        background-color: #FAFAFA;
+        height: 60vh;
+    }
+    
+} 
+
+@media (min-width: 451px) and (max-width: 875px){
+    .container{
+        width: 80%;
+        max-width: 400px;
+    }
+    
+    .smartphone{
+        display: none;
+    }
+    
+    .logout{
+        height: 60vh;
+        width: 60vw;
+    }
+    
+} 
+
+@media (min-width: 876px) and (max-width: 1200px){
+    .container{
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1201px){
+    .container{
+        width: 100%;
+        max-width: 800px;
+    }
+}

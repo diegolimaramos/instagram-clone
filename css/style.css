@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FAFAFA;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.smartphone{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.smartphone img:nth-child(1){
+    height: 563px;
+}
+
+.smartphone img:nth-child(2){
+    position: relative;
+    right: 275px;
+    top: 4px;
+    height: 387px;
+    width: 215px;
+}
+
+.container_data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+.login img{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.login form input{
+    border: 1px solid #dbdbdb;
+    background-color: #FAFAFA;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    outline: none;
+}
+
+form button{
+    margin-top: 15px;
+    height: 30px;
+    background-color:#B2DFFC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.active{
+    cursor: pointer;
+    background-color: #0095f6;
+}
+
+.container_lines{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: gray;
+    width: 80%;
+    font-size: 12px;
+}
+
+.container_lines .line{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_lines .or{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.facebook {
+    margin-top: -20px;
+    text-align: center;
+    width: 80%;
+    color: #465791;
+}
+
+.facebook img {
+    width: 18px;
+} 
+
+.facebook a {
+    cursor: pointer;
+    width: 18px;
+    font-size: 14px;
+    font-weight: bold;
+} 
+
+small{
+    font-size: 11px;
+    color: #465791;
+    cursor: pointer;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    width: 90%;
+    height: 20%;
+    margin-top: 10px;
+}
+
+.account a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0095f6;
+}
+
+.app{
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.download-apps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.download-apps img{
+    width: 40%;
+    cursor: pointer;
+}
+
+/* --------------------------RESPONSIVIDADE -------------------------- */
+@media(max-width: 250px){
+
+    .container{
+        width: 80%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .smartphone{
+        display: none;
+    }
+
+    .login{
+        border: none;
+        background-color: #FAFAFA;
+        height: 90%;
+        width: 100%;
+    }
+
+    .login > img{
+        width: 100%;
+    }
+
+    small{
+        font-size: 12px;
+    } 
+
+    .account{
+        text-align: center;
+        background-color: transparent;
+        border: none; 
+    }
+   
+    .download-apps img{
+        margin-bottom: 5px;
+        width: 80%;
+    }
+
+}
+
+
+@media (min-width: 251px) and (max-width: 450px){
+
+    .container{
+        width: 80%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .smartphone{
+        display: none;
+    }
+
+    .login{
+        border: none;
+        background-color: #FAFAFA;
+        height: 90%;
+        width: 100%;
+    }
+    
+    .login > img{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .facebook {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    small{
+        font-size: 12px;
+    } 
+
+    .account{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+    }
+   
+    .app{
+        margin-top: 20px;
+        height: 20%;
+    }
+    
+    .download-apps{
+        width: 50%;
+    }
+
+    .download-apps img{
+        margin-bottom: 5px;
+        width: 80%;
+    }
+} 
+
+@media (min-width: 451px) and (max-width: 875px){
+    .container{
+        margin-top: 70px;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .smartphone{
+        display: none;
+    }
+
+    .login{
+        height: 90%;
+    }
+    
+    .login > img{
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .facebook {
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+    
+    small{
+        font-size: 12px;
+    } 
+
+    .account{
+        margin-bottom: 30px;
+        padding: 5%;
+        height: 50%;
+    }
+
+    .download-apps{
+        margin-bottom: 5px;
+    }
+} 
+
+@media (min-width: 876px) and (max-width: 1200px){
+    .container{
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .account{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1201px){
+    .container{
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .account{
+        padding: 20px;
+    }
+}
