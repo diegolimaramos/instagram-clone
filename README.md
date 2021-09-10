@@ -7,7 +7,7 @@
 </p>
 
 <h3 align="center">
-  Deploy da Aplicação com Replit:
+  Deploy da Aplicação com Vercel:
   <a href="https://instagram-clone-diegolramos.vercel.app/" target="_blank">ACESSE AQUI </p>
 </h3>
 
